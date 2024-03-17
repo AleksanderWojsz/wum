@@ -1,0 +1,111 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            color: #ececec;
+            background-color: #212529;
+        } /* focus jest po to zeby okienko nie robilo sie biale po kliknieciu*/
+        .form-control, .form-select, .input-group-text, .form-check-input, .form-control:focus, .form-select:focus, .input-group-text:focus, .form-check-input:focus{
+            color: #ececec;
+            background-color: #343a40;
+            border: 1px solid #495057;
+        }
+        .form-control::placeholder {
+            color: #ececec;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container w-50">
+
+        <h4 class="text-center mb-4 mt-4">Błędy - arkusz WUM</h4>
+
+        <form action="https://formspree.io/f/mayrdqvb" method="POST">
+
+            <div class="form-group mb-4">
+                <label for="exampleInputEmail1">Imię</label>
+                <input type="text" name="imie" class="form-control" id="exampleInputEmail1" placeholder="Imię" required>
+            </div>
+
+            <div class="row mb-4">
+
+                <div class="col">
+                    <label for="arkusz">Nr arkusza</label>
+                    <select name="arkusz" class="form-select" id="arkusz" required>
+                        <option value="">Wybierz</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="zadanie">Nr zadania</label>
+                    <select name="zadanie" class="form-select" id="zadanie" required>
+                        <option value="">Wybierz</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group mb-4">
+                <label for="exampleFormControlTextarea1">Co jest źle?</label>
+                <textarea class="form-control" name="wiadomosc" id="exampleFormControlTextarea1" rows="7" placeholder="Wszystko" required></textarea>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-success w-25">Wyślij</button>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://www.google.com/search?client=opera&hs=oag&sca_esv=7de577393d04b1f4&sxsrf=ACQVn08gG3EtoF7T6QpH0ReimVR-WBayRg:1710706178899&q=dzik&tbm=isch&source=lnms&prmd=ivnbz&sa=X&ved=2ahUKEwjuve6QjfyEAxUURfEDHa4fApUQ0pQJegQIFxAB&biw=1053&bih=1131&dpr=1.15" class="btn btn-outline-secondary w-25">Zdjęcia</a>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+</html>
